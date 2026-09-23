@@ -1,0 +1,14 @@
+# Personal machine state and credentials
+.DS_Store
+.env
+.env.*
+!.env.example
+__pycache__/
+*.pyc
+.venv/
+.obsidian/*
+!.obsidian/app.json
+!.obsidian/core-plugins.json
+!.obsidian/templates.json
+!.obsidian/community-plugins.json
+.trash/
