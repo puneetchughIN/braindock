@@ -5,29 +5,73 @@ updated: 2026-09-23
 sensitivity: public
 ---
 
-# BrainDock
+# ⚓ BrainDock
 
 **Your personal brain. A shared memory layer for your AI agents.**
 
-An Obsidian starter vault for projects, decisions, and knowledge that travels with you. Plain Markdown holds the memory. You decide what persists.
+An Obsidian starter vault for personal work, projects, and knowledge that travels with you. Keep your context in plain Markdown, use it with different agents, and decide what becomes lasting memory.
+
+📄 **Plain Markdown** · 🧭 **Project continuity** · 🔌 **Agent-agnostic** · 🔐 **User-controlled**
+
+[Get started](Guides/Quick%20Start.md) · [Explore the vault](Start%20Here.md) · [Design choices](Guides/Design%20Choices.md)
 
 **Private preview.** This repository is being prepared for review. An open-source license has not yet been selected. Publication requires the owner's explicit approval.
 
-## The problem
+## 🧠 Why a personal brain needs its own memory
 
-A useful decision gets buried in a chat. A project changes direction, but its brief does not. A new assistant starts from an old summary. You spend the next session rebuilding context.
+Personal work extends beyond a single conversation. You research an idea, compare alternatives, make a decision, build something, and return to it weeks later. Along the way, the reasoning can end up scattered across notes, documents, project folders, and AI chats.
 
-BrainDock gives that context an address: a project entry point, one current-state record, decisions with reasons, and knowledge linked to evidence. You can inspect and edit the same files your agents use.
+An assistant may help with one part of that work. A different tool may be better suited to the next. The context you need includes what you are trying to achieve, what you already decided, the evidence behind it, and what remains unresolved.
 
-## Start in five steps
+BrainDock gives each of those things a durable home. A project has an entry point and one authoritative current-state record. Decisions retain their reasons. Useful knowledge links back to evidence. You can inspect and edit the same records an agent reads.
 
-1. Make a local copy of the starter. Keep your populated personal vault private and separate from the upstream template.
-2. Open the folder as a vault in Obsidian, or use a Markdown editor.
-3. Open [Start Here](Start%20Here.md).
-4. Follow [Quick Start](Guides/Quick%20Start.md) to create your first project.
-5. When using an agent, explicitly point it at [AGENTS.md](AGENTS.md) and your project entry note.
+The design starts with a simple principle: **your accumulated context should remain useful when you change tools.**
 
-No community plugins, AI subscription, hosted database, or Python installation is required to use the vault. Python 3.10+ is needed only for the optional structural checker.
+## 🔌 What agent-agnostic means
+
+BrainDock separates the knowledge you keep from the tool doing the work. Its records use ordinary files and shared conventions, with no required AI provider, hosted database, or proprietary memory format.
+
+| Part | Responsibility |
+|---|---|
+| You | Set goals, judge the work, and control access and consequential actions |
+| BrainDock | Keep project context, evidence, decisions, and reusable knowledge |
+| Obsidian or another editor | Let you read, navigate, and maintain the files |
+| An agent you choose | Read relevant context and perform the currently authorized task |
+
+An agent starts at [AGENTS.md](AGENTS.md), finds the selected project, and reads its current state and relevant records. When authorized to make changes, it preserves useful outcomes in those same records. A subsequent agent can follow the same route without needing the previous conversation.
+
+**Portability has three parts:** files can move between machines; records can be read in different editors; and working context can be reused by different agents. Relative links and explicit reading order support all three. Each tool still needs appropriate file access and permissions; tools without automatic AGENTS discovery need an explicit pointer.
+
+## 🧭 Built for personal work and projects
+
+Use BrainDock to develop a side project, investigate a question, plan a learning goal, or work through a personal decision. These are possible uses; the starter ships with empty project and knowledge indexes.
+
+Each project answers a few practical questions:
+
+- What problem is this addressing, and what would a useful outcome look like?
+- Where does the work stand, based on the available evidence?
+- Which decisions have been made, and why?
+- What remains unresolved, and what is the next meaningful move?
+
+A small project can keep current state in its brief. A larger one can point to a roadmap or dedicated state note. Optional source and repository registers add detail when needed. The [Projects index](Projects/00%20Projects.md) keeps the portfolio navigable without duplicating every project's status.
+
+For example, imagine evaluating an evening course. One session gathers sources and compares options. You record a decision to prioritize a manageable weekly workload, including the reason. Weeks later, another agent can read that decision and focus on the unresolved schedule question. A broader lesson about evaluating commitments can become a Knowledge note, linked to the project that produced it.
+
+## 💡 The thinking behind the structure
+
+**Keep the reasoning behind decisions.** Recording the chosen option is useful; preserving the alternatives, evidence, and consequences helps a future reader judge whether the choice still holds.
+
+**Give changing facts one owner.** The project entry names the record that owns current state. Other notes link to it. This reduces the chance that a brief, roadmap, and assistant summary tell different stories.
+
+**Promote memory deliberately.** A capture may become project context, a decision, or reusable knowledge. Some material can be discarded. Keeping useful conclusions and their support makes the vault easier to resume than retaining every intermediate exchange.
+
+**Read progressively.** Start with the vault map, then the project entry, then the evidence needed for the task. This gives people and agents a route through a growing body of work without requiring the entire vault in every session.
+
+**Keep knowledge connected to its evidence.** Sources, conclusions, and generated reports have different roles. A polished output should still lead back to the records that support it. Unknowns and conflicting evidence remain visible.
+
+**Keep memory separate from permission.** A historical decision explains what happened. An open thread records unfinished work. Neither automatically authorizes an agent to act. The user controls the current task and what gets shared.
+
+Read [Design Choices](Guides/Design%20Choices.md) for the tradeoffs and [How Memory Works](Guides/How%20Memory%20Works.md) for the record types.
 
 ## How memory moves
 
@@ -41,6 +85,18 @@ Evidence ────────┤                   │
 
 Capture is temporary. Project context holds current work. Decisions preserve reasoning. Knowledge keeps conclusions useful beyond one project. Another agent reads those records to resume.
 
+The [portable prompts](Prompts/00%20Prompts.md) cover three moments: resume a project, close a work session, and generate a read-only portfolio overview. Invoke them explicitly; the overview is a snapshot drawn from current records, not another dashboard to maintain.
+
+## 🚀 Start in five steps
+
+1. Make a local copy of the starter. Keep your populated personal vault private and separate from the upstream template.
+2. Open the folder as a vault in Obsidian, or use a Markdown editor.
+3. Open [Start Here](Start%20Here.md).
+4. Follow [Quick Start](Guides/Quick%20Start.md) to create your first project.
+5. When using an agent, explicitly point it at [AGENTS.md](AGENTS.md) and your project entry note.
+
+No community plugins, AI subscription, hosted database, or Python installation is required to use the vault. Python 3.10+ is needed only for the optional structural checker. You can use BrainDock entirely without an agent.
+
 ## Find your way
 
 | Area | What belongs here |
@@ -52,18 +108,13 @@ Capture is temporary. Project context holds current work. Decisions preserve rea
 | [Prompts](Prompts/00%20Prompts.md) | Portable, explicitly invoked agent workflows |
 | [Guides](Guides/00%20Guides.md) | Getting started, memory, portability, and design rationale |
 
-## What this demonstrates
+## 🔐 Control and practical limits
 
-- **Strategy:** frame a problem, state the scope, identify evidence, and preserve the reasoning behind a choice.
-- **Product judgment:** name an observable outcome, keep one current-state record, and distinguish committed work from future ideas.
-- **Practical AI:** give assistants durable context without making a provider's chat history the source of truth.
-- **Ownership:** use files you can read, move, back up, and control.
+Memory here is a set of files and conventions. Agents must be given access, directed to read the appropriate records, and authorized to update them. BrainDock does not automatically inject context, synchronize agents, run in the background, or guarantee that a model will follow instructions. Simultaneous writers need coordination, and the records need maintenance as the work changes.
 
-Read [Design Choices](Guides/Design%20Choices.md) for the tradeoffs.
+Local files give you control over storage, but an AI tool may send content to its provider for processing. Choose access and tools with the sensitivity of your material in mind. See [Security](SECURITY.md) and [Working with AI Agents](Guides/Working%20with%20AI%20Agents.md).
 
-## What agent memory means here
-
-Memory is a set of files and conventions. Agents must be given access, directed to read the appropriate records, and authorized to update them. BrainDock does not automatically inject context, synchronize agents, run in the background, or guarantee that a model will follow instructions. Simultaneous writers need coordination.
+The portability and fresh-reader checks performed for this preview are described in the [verification record](docs/verification.md). That exercise used a separate agent context in the same environment; compatibility across other AI providers has not been tested.
 
 ## Optional health check
 
