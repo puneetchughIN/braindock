@@ -7,6 +7,8 @@ sensitivity: public
 
 # BrainDock starter plan
 
+Historical build plan: the initial private-review phase is complete. On 2026-09-23, the owner approved public release with the MIT license and template-based adoption. The boundaries below record the original build scope; current maintenance guidance lives in [Maintaining BrainDock](../../Guides/Maintaining%20BrainDock.md).
+
 ## Outcome
 
 A private, reviewable Obsidian starter demonstrating portable knowledge and an agent memory layer. Empty project and knowledge indexes; generic instructions and blank templates only.

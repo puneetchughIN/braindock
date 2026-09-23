@@ -5,9 +5,9 @@ updated: 2026-09-23
 sensitivity: public
 ---
 
-# Private preview verification
+# Starter verification
 
-## Observed on 2026-09-23
+## Initial private-build checks — 2026-09-23
 
 | Check | Result |
 |---|---|
@@ -36,6 +36,8 @@ The checker intentionally supports a limited Markdown link syntax. It does not v
 
 No dedicated lint or type-checking tool is configured. Validation uses the standard-library test suite, structural checker, whitespace review, and manual inspection.
 
-## Release boundary
+## Public release — 2026-09-23
 
-This is a private review candidate. License selection and owner review remain before public release. No automatic private-vault synchronization is configured. A later public release requires a new explicit owner instruction and review of the exact candidate and its complete history.
+The owner explicitly authorized public release following review, accepting the proposed MIT license and GitHub template setup. The release adds a LICENSE file, removes current preview-only wording, and explains private template copies, local clones, and public contribution forks. The [original build plan](plans/2026-09-23-braindock-starter.md) remains a historical record. No automatic private-vault synchronization is configured.
+
+Release validation: 42 candidate text files, 34 Markdown notes with zero structural issues, and all 13 tests passing. The candidate and all 42 unique text blobs in the three pre-release commits were scanned for private-vault identifiers and common credential markers, with no matches. The release diff and historical path inventory were reviewed; no personal-vault files or history were imported. Pattern scans supplement review and do not guarantee the absence of every possible sensitive value.

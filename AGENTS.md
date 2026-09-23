@@ -20,4 +20,4 @@ Read [README](README.md), [Start Here](Start%20Here.md), [Vault Specification](V
 
 Portable workflows are listed in [Prompts](Prompts/00%20Prompts.md). Their filenames are entry points, not universally registered slash commands. Tools without automatic AGENTS discovery need the user to point here explicitly.
 
-For work on the BrainDock starter itself, consult [Maintaining BrainDock](Guides/Maintaining%20BrainDock.md). The repository must remain private until the owner explicitly requests public visibility.
+For work on the BrainDock starter itself, consult [Maintaining BrainDock](Guides/Maintaining%20BrainDock.md). Keep starter contributions generic and keep populated personal vaults separate. Repository visibility changes require explicit owner authorization.

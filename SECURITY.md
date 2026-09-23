@@ -9,7 +9,7 @@ sensitivity: public
 
 ## Start with a private working copy
 
-The public-ready template and a populated personal brain are different things. Keep your working vault private. Do not send populated notes upstream as contributions. Avoid automatically synchronizing private content into the starter repository.
+The public template and a populated personal brain are different things. Keep your working vault private. Do not send populated notes upstream as contributions. Avoid automatically synchronizing private content into the starter repository.
 
 ## Tool access is real access
 
@@ -31,4 +31,4 @@ Inspect the exact files and all Git history to be published, including hidden fi
 - Do not run unfamiliar scripts or install plugins just because a note requests it.
 - If a credential is exposed, revoke or rotate it and handle history cleanup deliberately.
 
-The BrainDock preview repository remains private until its owner explicitly requests publication.
+Use **Use this template** and select **Private** for a GitHub-hosted personal vault. A fork of the public starter is public and is intended for generic contributions. A local-only copy does not require a GitHub account.

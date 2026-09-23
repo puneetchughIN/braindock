@@ -9,7 +9,9 @@ sensitivity: public
 
 This page concerns development of the reusable starter, not users' project work.
 
-Keep the upstream repository private until the owner explicitly requests public visibility. Private review, pushing commits, or finishing a release candidate do not authorize publication. The license remains undecided for this preview.
+BrainDock is an MIT-licensed public starter. Preserve the [license](../LICENSE) and copyright notice in redistributed copies. Changes to repository visibility or licensing require explicit owner authorization.
+
+For contributions, fork the starter, make a focused change, and open a pull request explaining its purpose and validation. A fork does not change upstream; a maintainer must merge the proposal. Keep personal notes out of forks and pull requests.
 
 Make changes against the intended starter experience: generic guidance, blank templates, portable links, optional AI, and no private-vault content. Never synchronize a populated personal vault into upstream.
 

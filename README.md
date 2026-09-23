@@ -15,7 +15,7 @@ An Obsidian starter vault for personal work, projects, and knowledge that travel
 
 [Get started](Guides/Quick%20Start.md) · [Explore the vault](Start%20Here.md) · [Design choices](Guides/Design%20Choices.md)
 
-**Private preview.** This repository is being prepared for review. An open-source license has not yet been selected. Publication requires the owner's explicit approval.
+[Use this template](https://github.com/puneetchughIN/braindock/generate) to create your own private brain. Free to adapt under the [MIT license](LICENSE).
 
 ## 🧠 Why a personal brain needs its own memory
 
@@ -89,13 +89,26 @@ The [portable prompts](Prompts/00%20Prompts.md) cover three moments: resume a pr
 
 ## 🚀 Start in five steps
 
-1. Make a local copy of the starter. Keep your populated personal vault private and separate from the upstream template.
+1. Click [Use this template](https://github.com/puneetchughIN/braindock/generate), choose **Private**, and create your own repository. Clone or download your new repository to your computer.
 2. Open the folder as a vault in Obsidian, or use a Markdown editor.
 3. Open [Start Here](Start%20Here.md).
 4. Follow [Quick Start](Guides/Quick%20Start.md) to create your first project.
 5. When using an agent, explicitly point it at [AGENTS.md](AGENTS.md) and your project entry note.
 
 No community plugins, AI subscription, hosted database, or Python installation is required to use the vault. Python 3.10+ is needed only for the optional structural checker. You can use BrainDock entirely without an agent.
+
+### Choose how to start
+
+| Your goal | Starting point |
+|---|---|
+| Build your personal brain | **Use this template** → create a **private** repository → clone or download your copy |
+| Try it locally without Git | **Code → Download ZIP**, extract it, and open the folder in Obsidian |
+| Try it locally with Git | Run `git clone https://github.com/puneetchughIN/braindock.git` and open the resulting folder |
+| Contribute improvements | Fork BrainDock, make generic changes, and submit a pull request |
+
+A template creates an independent repository with fresh history. Future BrainDock updates do not automatically update your copy; review and selectively adopt changes. A clone downloads files and history; editing locally does not upload anything automatically. Forks of public repositories are public, so keep personal notes in a private template copy or local vault. Changes in a fork affect upstream only when a maintainer merges a pull request.
+
+See [Quick Start](Guides/Quick%20Start.md) for detailed setup.
 
 ## Find your way
 
@@ -114,7 +127,7 @@ Memory here is a set of files and conventions. Agents must be given access, dire
 
 Local files give you control over storage, but an AI tool may send content to its provider for processing. Choose access and tools with the sensitivity of your material in mind. See [Security](SECURITY.md) and [Working with AI Agents](Guides/Working%20with%20AI%20Agents.md).
 
-The portability and fresh-reader checks performed for this preview are described in the [verification record](docs/verification.md). That exercise used a separate agent context in the same environment; compatibility across other AI providers has not been tested.
+The portability and fresh-reader checks performed for the starter are described in the [verification record](docs/verification.md). That exercise used a separate agent context in the same environment; compatibility across other AI providers has not been tested.
 
 ## Optional health check
 
@@ -127,8 +140,10 @@ python3 -m unittest discover -s tests -v
 
 The checker reports structural issues. It does not audit secrets, verify claims, inspect Git history, or certify publication safety. See [Checking and Recovery](Guides/Checking%20and%20Recovery.md).
 
-## Preview and release
+## License
 
-This starter contains generic instructions and blank templates. It contains no populated personal projects or imported private-vault history. A license decision and owner review remain before a public release.
+BrainDock is available under the [MIT license](LICENSE), copyright © 2026 Puneet Chugh. You may use, modify, and redistribute the starter, including commercially, while retaining the required copyright and license notices. It is provided without warranty.
+
+This starter contains generic instructions and blank templates. It contains no populated personal projects or imported private-vault history. The license does not require you to publish your personal notes or modifications.
 
 Created by [Puneet Chugh](https://github.com/puneetchughIN), exploring strategy, AI, and products through practical systems for knowledge work.
